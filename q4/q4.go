@@ -6,5 +6,14 @@ package q4
 //Você deve implementar uma solução com complexidade de tempo linear e sem memória extra.
 
 func SingleNumber(nums []int) int {
-	return 0
+	Map := make(map[int]int)
+	for _, num := range nums {
+		Map[num]++
+	}
+	for i, num := range nums {
+		if Map[num] == 1 {
+			return i
+		}
+	}
+	return -1
 }
