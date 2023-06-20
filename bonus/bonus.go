@@ -17,5 +17,15 @@ type LinkedList struct {
 }
 
 func MergeTwoLists(list1 *LinkedList, list2 *LinkedList) *LinkedList {
-	return nil
+	var novalista *LinkedList
+
+	if list1.
+	if list1 == nil {
+		return list2
+	}
+	if list2 == nil {
+		return list1
+	}
+
+	return novalista
 }
